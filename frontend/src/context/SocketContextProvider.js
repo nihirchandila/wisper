@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import SocketContext from './SocketContext';
 import io from "socket.io-client";
-import { useFetcher } from 'react-router-dom';
 import authContext from './AuthContext.js';
 
 export default function SocketContextProvider({ children }) {
@@ -12,7 +11,7 @@ export default function SocketContextProvider({ children }) {
     useEffect(()=>{
         if(userData){
             // console.log(userData)
-            const socket = io("https://wisper.onrender.com/",{
+            const socket = io("https://wisper.onrender.com",{
                 query: {
                     userId:userData.id 
                 }

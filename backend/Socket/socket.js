@@ -9,7 +9,7 @@ const server = http.createServer(app)
 const io = new Server(server,{
     cors:{
         // origin: [process.env.Frontend_Url],
-        origin: ["https://wisper.onrender.com/"],
+        origin: ["https://wisper.onrender.com"],
 
         methods: ["GET", "POST"]
     }
