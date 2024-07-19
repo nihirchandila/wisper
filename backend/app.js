@@ -1,3 +1,4 @@
+import path from "path"
 import express from "express"
 import cors from "cors"
 import dotenv from "dotenv";
@@ -15,6 +16,7 @@ import {app, server} from "./Socket/socket.js"
 
 //import 
 //init values here
+const __dirname = path.resolve()
 dotenv.config();
 const corsOptions = {
     origin: 'http://localhost:3000', // Frontend URL
@@ -33,7 +35,11 @@ app.use("/api", userRoute)
 app.use("/page", pageRoute)
 app.use("/message", messageRoute)
 
+app.use(express.static(path.join(__dirname,"/frontend/build")))
 
+app.get("*", (req, res)=>{
+    res.sendFile(path.join(__dirname, "/frontend/build/index.html"))
+})
 
 server.listen(Port,()=>{
     connect()
