@@ -41,7 +41,7 @@ export default function Dashboard() {
 
   const handleLogout = async () => {
     axios({
-      url: apiBaseUrl + "/api/logout",
+      url: "/api/logout",
       method: "post",
       data: {},
       withCredentials: true

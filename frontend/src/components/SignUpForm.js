@@ -42,7 +42,7 @@ export default function SignUpForm() {
             const apiBaseUrl = process.env.REACT_APP_API_BASE_URL;
             //hit api to submit details if matched
             axios({
-                url: apiBaseUrl+"/api/register/",
+                url: "/api/register/",
                 method: "post",
                 data: data
             }).then((res)=>{

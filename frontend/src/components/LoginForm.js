@@ -34,7 +34,7 @@ export default function LoginForm() {
     })
 
     axios({
-      url: apiBaseUrl+"/api/login/",
+      url: "/api/login/",
       method: "post",
       data: data,
       withCredentials: true, // Ensure cookies are sent with the request

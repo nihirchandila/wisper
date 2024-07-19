@@ -18,7 +18,7 @@ const useSendMessage=()=>{
         setScroll(false)
         setLoading(true);
         axios({
-            url: apiBaseUrl+"/message/send/"+selectedConversation?._id,
+            url: "/message/send/"+selectedConversation?._id,
             method: "post",
             data: {message},
             withCredentials: true //Ensure cookies are sent with the request

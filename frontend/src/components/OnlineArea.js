@@ -28,7 +28,7 @@ export default function OnlineArea() {
     const getData = () => {
         setLoading(true);
         axios({
-            url: apiBaseUrl + "/api/sidebarUsers",
+            url: "/api/sidebarUsers",
             method: "post",
             data: {},
             withCredentials: true, // Ensure cookies are sent with the request

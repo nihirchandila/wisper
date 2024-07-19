@@ -30,7 +30,7 @@ export default function Conversation() {
 
     const getData = () => {
         axios({
-            url: apiBaseUrl+"/api/sidebarUsers",
+            url: "/api/sidebarUsers",
             method: "post",
             data: {},
             withCredentials: true, // Ensure cookies are sent with the request
@@ -53,7 +53,7 @@ export default function Conversation() {
     const getMessages = ()=>{
         setMesLoading(true)
         axios({
-            url: apiBaseUrl+"/message/getConversaiton",
+            url: "/message/getConversaiton",
             method: "post",
             data: {},
             withCredentials: true, // Ensure cookies are sent with the request
@@ -84,7 +84,7 @@ export default function Conversation() {
         setTimeout(()=>{
             const searchValue = e.target.value
             axios({
-                url: apiBaseUrl+"/api/search",
+                url: "/api/search",
                 method: "post",
                 data: {search: searchValue}
             })

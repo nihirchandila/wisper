@@ -76,7 +76,7 @@ export default function ChatArea() {
         setMessages([])
         setLoading(true)
         axios({
-            url: apiBaseUrl+"/message/get/"+selectedConversation?._id,
+            url: "/message/get/"+selectedConversation?._id,
             method: "post",
             data: {},
             withCredentials: true, // Ensure cookies are sent with the request
