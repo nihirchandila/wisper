@@ -16,8 +16,8 @@ import {app, server} from "./Socket/socket.js"
 
 //import 
 //init values here
-// const __dirname = path.resolve()
-// dotenv.config();
+const __dirname = path.resolve()
+dotenv.config();
 // const corsOptions = {
 //     origin: 'http://localhost:3000', // Frontend URL
 //     methods: ['GET', 'POST', 'PUT', 'DELETE'],
