@@ -1,14 +1,16 @@
 import { Server } from "socket.io";
 import express from "express"
 import http from "http"
-import dotenv from "dotenv";
-dotenv.config();
+// import dotenv from "dotenv";
+// dotenv.config();
 
 const app = express()
 const server = http.createServer(app)
 const io = new Server(server,{
     cors:{
-        origin: [process.env.Frontend_Url],
+        // origin: [process.env.Frontend_Url],
+        origin: ["https://wisper.onrender.com/"],
+
         methods: ["GET", "POST"]
     }
 })

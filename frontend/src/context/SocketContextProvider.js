@@ -12,7 +12,7 @@ export default function SocketContextProvider({ children }) {
     useEffect(()=>{
         if(userData){
             // console.log(userData)
-            const socket = io(process.env.REACT_APP_API_BASE_URL,{
+            const socket = io("https://wisper.onrender.com/",{
                 query: {
                     userId:userData.id 
                 }
