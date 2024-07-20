@@ -11,7 +11,7 @@ export default function SocketContextProvider({ children }) {
       //for testing how to get env in react on server
 
     const ReactDEV = process.env.REACT_APP_DEV?process.env.REACT_APP_DEV:"http://localhost:3001"
-    console.log("REACT_APP_DEV "+ReactDEV)
+    // console.log("REACT_APP_DEV "+ReactDEV)
 
 
     useEffect(()=>{

@@ -548,11 +548,11 @@ ul {
         overflow: hidden;
     }
     .chat-page {
-        height: 100vh;
+        height: 90vh;
         overflow: hidden;
     }
     .chat-page .height-vh {
-        height: 84%;
+        height: 93%;
     }
     /*reset*/
 
@@ -590,7 +590,7 @@ ul {
         display: none;
     }
     .online-wrap {
-        height: 94%;
+        height: 100%;
     }
     .sidebar-users .search-wrap {
         height: 10%;

@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.e521d8c9.css",
+    "main.css": "/static/css/main.1eb39a2c.css",
     "main.js": "/static/js/main.76c14fdb.js",
     "static/media/message-ringtone.mp3": "/static/media/message-ringtone.8b951f2f89badf0872d1.mp3",
     "index.html": "/index.html",
-    "main.e521d8c9.css.map": "/static/css/main.e521d8c9.css.map",
+    "main.1eb39a2c.css.map": "/static/css/main.1eb39a2c.css.map",
     "main.76c14fdb.js.map": "/static/js/main.76c14fdb.js.map"
   },
   "entrypoints": [
-    "static/css/main.e521d8c9.css",
+    "static/css/main.1eb39a2c.css",
     "static/js/main.76c14fdb.js"
   ]
 }
