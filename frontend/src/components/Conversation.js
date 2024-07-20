@@ -10,7 +10,6 @@ import moment from 'moment'
 
 
 export default function Conversation() {
-    const apiBaseUrl = process.env.REACT_APP_API_BASE_URL;
     const {selectedConversation, setSelectedConversation, mobileStyle, setMobileStyle, messages} = useConversation()
     const navigate = useNavigate()
     const [conversations, setConversations] = useState([])

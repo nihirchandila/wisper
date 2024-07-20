@@ -10,7 +10,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Dashboard() {
-  const apiBaseUrl = process.env.REACT_APP_API_BASE_URL;
   const { setSelectedConversation, mobileStyle, setMobileStyle } = useConversation();
   const navigate = useNavigate();
   const[userData, setUserData] = useState([])

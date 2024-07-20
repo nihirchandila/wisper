@@ -10,6 +10,7 @@ import AuthContextProvider from './context/AuthContextProvider.js';
 import SocketContextProvider from './context/SocketContextProvider.js';
 
 export default function App() {
+
   // const userData = AuthContextProvider()
   return (
     <>

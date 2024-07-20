@@ -13,7 +13,6 @@ export default function OnlineArea() {
     const [loading, setLoading] = useState(false);
     const { userData } = useContext(authContext);
     const { onlineUsers } = useContext(SocketContext);
-    const apiBaseUrl = process.env.REACT_APP_API_BASE_URL;
     const {mobileStyle} = useConversation()
 
 

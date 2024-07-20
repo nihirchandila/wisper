@@ -5,7 +5,6 @@ import useConversation from "../zustand/useConversation.js"
 const useSendMessage=()=>{
     const [mesLoading, setLoading] = useState(false);
     const [mesScroll,setScroll] = useState(false)
-    const apiBaseUrl = process.env.REACT_APP_API_BASE_URL
     const { selectedConversation, messages, setMessages } = useConversation()
 
     const error = (error)=>{

@@ -8,10 +8,19 @@ export default function SocketContextProvider({ children }) {
     const [socket, setSocket] = useState(null);
     const [onlineUsers, setOnlineUsers] = useState([]);
 
+      //for testing how to get env in react on server
+  const DEV = process.env.DEV
+  console.log("DEV"+DEV)
+  const ReactDEV = process.env.REACT_APP_DEV
+  console.log("REACT_APP_DEV "+ReactDEV)
+  //manually set dev url
+    const dev = "http://localhost:3001"
+
+
     useEffect(()=>{
         if(userData){
             // console.log(userData)
-            const socket = io("https://wisper.onrender.com",{
+            const socket = io(dev,{
                 query: {
                     userId:userData.id 
                 }

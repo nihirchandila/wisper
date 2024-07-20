@@ -37,6 +37,9 @@ body {
     background-color: #222222;
     scroll-behavior: smooth;
 }
+#root{
+    height: 100vh;
+}
 /* scrollbar designing */
   
 /* Define the track style */
@@ -140,6 +143,7 @@ html::-webkit-scrollbar-thumb:hover {
 .chat-page {
     background-color: #222222;
     padding: 10px 20px 10px 10px;
+    height: 100%;
 }
 .chat-page .height-vh {
     height: 97vh;
@@ -488,7 +492,7 @@ ul {
 
 .mobile-nav {
     display: none!important;
-    height: 10vh;
+    height: 10%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -499,6 +503,7 @@ ul {
     color: #fff;
     border-radius: 8px;
     padding: 5px;
+    overflow: hidden;
 }
 .mobile-nav .nav-item {
     text-align: center;
@@ -563,7 +568,7 @@ ul {
         padding: 60px 25px 10px 25px;
     }
     .chat-page .height-vh {
-        height: 89vh;
+        height: 90%;
     }
     .mobile-nav {
         display: block!important;
@@ -572,7 +577,7 @@ ul {
         display: none;
     }
     .online-wrap {
-        height: 88vh;
+        height: 90%;
     }
 }
 @media (max-width: 767.65px) {

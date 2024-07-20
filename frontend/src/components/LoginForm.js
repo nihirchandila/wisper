@@ -10,7 +10,6 @@ export default function LoginForm() {
   const navigate = useNavigate()
   const [buttonLoader, setLoader] = useState("Login")
 
-  const apiBaseUrl = process.env.REACT_APP_API_BASE_URL;
   const success = (message) => {
       toast.success(message, {
           position: "top-center",

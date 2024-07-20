@@ -24,7 +24,6 @@ export default function ChatArea() {
     const [scroll,setScroll] = useState(false)
     const [loading, setLoading] = useState(false)
     const { selectedConversation, messages, setMessages, mobileStyle} = useConversation()
-    const apiBaseUrl = process.env.REACT_APP_API_BASE_URL
     const {sendMessage, mesLoading, mesScroll} = useSendMessage()
 
     //toast error

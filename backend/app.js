@@ -18,29 +18,30 @@ import {app, server} from "./Socket/socket.js"
 //init values here
 const __dirname = path.resolve()
 dotenv.config();
-// const corsOptions = {
-//     origin: 'http://localhost:3000', // Frontend URL
-//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-//     credentials: true, // Allow credentials (cookies) to be sent
-//     allowedHeaders: ['Content-Type', 'Authorization'],
-// };
-const allowedOrigins = [
-    'http://localhost:3000',
-    'https://wisper.onrender.com'
-];
-
+const DEV = process.env.DEV
 const corsOptions = {
-    origin: function (origin, callback) {
-        if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
+    origin: DEV, // Frontend URL
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true, // Allow credentials (cookies) to be sent
     allowedHeaders: ['Content-Type', 'Authorization'],
 };
+// const allowedOrigins = [
+//     'http://localhost:3001',
+//     'https://wisper.onrender.com'
+// ];
+
+// const corsOptions = {
+//     origin: function (origin, callback) {
+//         if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+//             callback(null, true);
+//         } else {
+//             callback(new Error('Not allowed by CORS'));
+//         }
+//     },
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//     credentials: true, // Allow credentials (cookies) to be sent
+//     allowedHeaders: ['Content-Type', 'Authorization'],
+// };
 
 app.use(cors(corsOptions));
 const Port = process.env.PORT || 3002
