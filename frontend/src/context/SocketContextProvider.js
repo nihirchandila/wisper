@@ -13,8 +13,10 @@ export default function SocketContextProvider({ children }) {
   console.log("DEV"+DEV)
   const ReactDEV = process.env.REACT_APP_DEV
   console.log("REACT_APP_DEV "+ReactDEV)
+  const local = "http://localhost:3001"
+  const live = "https://wisper.onrender.com"
   //manually set dev url
-    const dev = "http://localhost:3001"
+    const dev = live
 
 
     useEffect(()=>{
