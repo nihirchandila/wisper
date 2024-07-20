@@ -167,7 +167,7 @@ html::-webkit-scrollbar-thumb:hover {
 }
 .chat-area {
     background-color: #ffffff;
-    border-radius: 25px;
+    border-radius: 10px;
     padding: 18px;
 
 }
@@ -568,7 +568,7 @@ ul {
         padding: 60px 25px 10px 25px;
     }
     .chat-page .height-vh {
-        height: 90%;
+        height: 80%;
     }
     .mobile-nav {
         display: block!important;
@@ -577,7 +577,12 @@ ul {
         display: none;
     }
     .online-wrap {
-        height: 90%;
+        height: 95%;
+    }
+    .sidebar-users .search-wrap {
+        height: 10%;
+        margin-bottom: 5px;
+        margin-top: 10px;
     }
 }
 @media (max-width: 767.65px) {
