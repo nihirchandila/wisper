@@ -86,7 +86,6 @@ export default function ChatArea() {
                 setLoading(false)
                 setScroll(true)
             }else{
-                error("There is some error, Please try again later.")
                 setLoading(false)
             }
         }).catch((err)=>{

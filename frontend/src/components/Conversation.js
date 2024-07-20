@@ -62,7 +62,6 @@ export default function Conversation() {
                 setSidebarMessages(res.data.data)
                 setMesLoading(false)
             }else{
-                error("There is some error, Please try again later.")
                 setLoading(false)
             }
         }).catch((err)=>{
@@ -92,7 +91,6 @@ export default function Conversation() {
                     setConversations(res.data.data)
                     setLoading(false)
                 }else{
-                    error("There is some error please try again later")
                     setLoading(false)
                 }
             })

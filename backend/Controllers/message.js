@@ -77,7 +77,7 @@ const getConversations = async (req, res) => {
         participants: { $in: [userId] },
       }).populate("messages");
   
-      if (!conversations.length) return res.json({ status: 400, data: [] });
+      if (!conversations.length) return res.json({ status: 200, data: [] });
   
       // Extract messages from all conversations
       const messages = conversations;
