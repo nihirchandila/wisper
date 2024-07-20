@@ -545,15 +545,14 @@ ul {
     /*reset*/
     #root {
         height: auto;
+        overflow: hidden;
     }
     .chat-page {
         height: 100vh;
+        overflow: hidden;
     }
     .chat-page .height-vh {
         height: 90%;
-    }
-    .chat-page .height-vh {
-        height: 80%;
     }
     /*reset*/
 
@@ -591,7 +590,7 @@ ul {
         display: none;
     }
     .online-wrap {
-        height: 95%;
+        height: 100%;
     }
     .sidebar-users .search-wrap {
         height: 10%;
